@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anshu Sarkar - Portfolio</title>
+    <link rel="stylesheet" href="portfollio.css">
+</head>
+
+<body>
+    <!-- Loader (Shows while the page is loading) -->
+    <div id="loader" class="loader"></div>
+
+    <header>
+        <h1>Anshu Sarkar</h1>
+        <img src="Anshu.jpg" alt="Anshu Sarkar's Photo" class="profile-photo">
+        <nav>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a B.Tech student at the University of Engineering and Management, aiming to secure a data science-related job with excellent growth opportunities.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <h3>Primary Skills</h3>
+        <p>Python, R, Java, C, SQL</p>
+        <h3>Other Skills</h3>
+        <p>SWI-Prolog, HTML, Matlab, LaTeX, MS Word, PowerPoint, Excel</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <p>Explore my work on <a href="https://github.com/anshusarkar" target="_blank">GitHub</a>. My experience includes frameworks and tools like TensorFlow, PyTorch, Numpy, Pandas, Scikit-learn, Keras, and Matplotlib.</p>
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <ul>
+            <li>Bachelor of Technology (2021-2025) - University of Engineering and Management</li>
+            <li>Higher Secondary Education (2019-2021) - Manindranagar High School</li>
+            <li>Primary Education - Ladhuram Toshniwal Saradha Vidya Mandir</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Email: <a href="mailto:anshusarkar11@gmail.com">anshusarkar11@gmail.com</a></p>
+        <p>Phone: +91 7063574246</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/anshu-sarkar-21b553223/" target="_blank">linkedin.com/in/anshu-sarkar</a></p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Anshu Sarkar. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript to Hide the Loader After Page Loads -->
+    <script>
+        window.addEventListener("load", function () {
+            const loader = document.getElementById("loader");
+            loader.style.display = "none"; // Hide loader once page is loaded
+        });
+    </script>
+</body>
+</html>

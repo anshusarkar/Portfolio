@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+}
+header {
+    background: url('Background.jpg') no-repeat center center; /* Add your image path here */
+    background-size: cover; /* Ensures the image covers the entire header */
+    color: #fff;
+    padding: 2rem 0;
+    text-align: center;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 10px;
+}
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+section {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: 0; /* Start with the heading hidden */
+    transform: translateY(20px); /* Start with a slight downward offset */
+    animation: fadeInUp 1s forwards; /* Apply the animation */
+    animation-delay: 0.3s; /* Delay for a slight stagger effect */
+}
+
+
+h2 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 0.5rem;
+}
+footer {
+    text-align: center;
+    padding: 0.001rem 0;
+    background: #333;
+    color: #fff;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    opacity: 0; /* Start with the footer invisible */
+    animation: fadeInFooter 1s forwards; /* Apply fade-in animation */
+    animation-delay: 1s; /* Delay the animation */
+}
+
+/* Define the fade-in animation */
+@keyframes fadeInFooter {
+    0% {
+        opacity: 0; /* Start with the footer invisible */
+    }
+    100% {
+        opacity: 0.90; /* End with the footer fully visible */
+    }
+}
+
+
+.profile-photo {
+    width: 100px; /* Adjust the size as needed */
+    height: 100px; /* Match the width for a circular frame */
+    border-radius: 50%;
+    border: 2px solid #ccc; /* Optional border */
+    position: absolute;
+    top: 20px; /* Adjust vertical positioning */
+    left: 20px; /* Adjust horizontal positioning */
+    object-fit: cover; /* Ensures the photo fits nicely */
+}
+/* Add this to your existing portfolio.css */
+nav ul li {
+    opacity: 0; /* Start with items hidden */
+    transform: translateY(20px); /* Start by moving items down */
+    animation: fadeInUp 0.6s forwards; /* Apply fade-in animation */
+    animation-delay: 0.3s; /* Delay for the first item, adjust for others */
+}
+
+/* Animation to fade in and slide up */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Delay each item in the list to create a staggered effect */
+nav ul li:nth-child(1) {
+    animation-delay: 0.3s;
+}
+nav ul li:nth-child(2) {
+    animation-delay: 0.4s;
+}
+nav ul li:nth-child(3) {
+    animation-delay: 0.5s;
+}
+nav ul li:nth-child(4) {
+    animation-delay: 0.6s;
+}
+nav ul li:nth-child(5) {
+    animation-delay: 0.7s;
+}
+/* General styling for all sections */
+section {
+    opacity: 0; /* Start with sections hidden */
+    transform: translateY(20px); /* Start by moving sections down */
+    animation: fadeInUp 1s forwards; /* Apply the animation */
+}
+
+/* Animation to fade in and slide up */
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Staggered delay for each section */
+section:nth-child(1) {
+    animation-delay: 0.3s;
+}
+section:nth-child(2) {
+    animation-delay: 0.6s;
+}
+section:nth-child(3) {
+    animation-delay: 0.9s;
+}
+section:nth-child(4) {
+    animation-delay: 1.2s;
+}
+section:nth-child(5) {
+    animation-delay: 1.5s;
+}
+
+section:hover {
+    transform: translateY(-5px); /* Slight upward movement */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Add shadow for lift effect */
+}
+/* Style for the loading spinner */
+#loadingSpinner {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; /* Ensures the spinner stays on top of other content */
+}
+
+/* Spinner style */
+.spinner {
+    border: 8px solid #f3f3f3; /* Light gray border */
+    border-top: 8px solid #3498db; /* Blue color for the spinner */
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 2s linear infinite;
+}
+
+/* Keyframes for spinning animation */
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
